@@ -26,7 +26,7 @@ app.post("/api/fileanalyse", upload.single('upfile'), (req, res) => {
   })
 });
 
-//Listen for requests
+//Deploys the website to a local server
 var listener = app.listen(process.env.PORT, function() {
   console.log("Your app is listening on port " + listener.address().port);
 });
